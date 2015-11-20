@@ -14,6 +14,6 @@
   }
 
   // normal desktop view
-  @include breakpoint($bp-lg-up) {
+  @include breakpoint($bp-lg-min) {
   }
 }
