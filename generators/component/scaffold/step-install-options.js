@@ -66,7 +66,7 @@ var step = inquisitor.ScaffoldStep({
     var templateDir = answers.dirs.template;
 
     // configure the components name
-    answers.compName = S(answers.compPrefix + ' ' + answers.compName).slugify().s;
+    answers.compName = S(answers.compName).slugify().s;
     answers.compClassName = S(answers.compName).camelize().s;
     answers.compClassName = answers.compClassName[0].toUpperCase() + answers.compClassName.slice(1); // Can't use .capitalize() as it will lowercase the camel humps
 
@@ -80,10 +80,6 @@ var step = inquisitor.ScaffoldStep({
       answers.aborted = true;
       return next(); // End the process here for now
     }
-
-    // Lets add some files to the template file array for us to target when we get to the install. Paths can easily
-    // be added or negated based on different answers provided by the user.
-    answers.files.push(answers.dirs.template.root + '**');
 
     // Specify the targeted destination path for this template to send files too, and make sure it's system
     // friendly. Stringjs is a boon for essential string manipulation such as slugifying a path name.

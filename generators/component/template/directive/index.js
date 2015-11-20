@@ -8,7 +8,7 @@ import angular from 'angular';
 import controller from './<%= compName %>.controller';
 import directive from './<%= compName %>.directive';
 
-export default angular.module('app.comp', [])
+export default angular.module('app.<%= compName %>', [])
   .controller('<%= compClassName %>Controller', controller)
   .directive('<%= compName %>', directive)
   .name;

@@ -17,8 +17,7 @@
 		"npm": ">=1.4.3"
 	},
 	"scripts": {
-		"test": "echo \"No tests\"",
-		"preinstall": "npm i -g slush bower"
+		"test": "echo \"No tests\""
 	},
 	"dependencies": {
 		"hence-inquisitor": "hence-io/hence-inquisitor",

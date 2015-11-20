@@ -1,6 +1,6 @@
 @import "../../styles/lib";
 
-[%= compName %>] {
+[<%= compName %>] {
   // xs view
   @include breakpoint($bp-xs-only) {
   }

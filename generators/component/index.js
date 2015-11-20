@@ -23,7 +23,7 @@ var scaffold = inquisitor.Scaffold({
         common: path.join(tplDir, 'common'),
         optional: path.join(tplDir, 'optional')
       },
-      dest: path.join(cwd, 'generators')
+      dest: path.join(cwd, '')
     }
   },
   // Control what messages appear during your installation. The scaffold manages the initial introduction, as well
