@@ -68,7 +68,8 @@ var step = inquisitor.ScaffoldStep({
     // configure the components name
     answers.compName = S(answers.compName).slugify().s;
     answers.compClassName = S(answers.compName).camelize().s;
-    answers.compClassName = answers.compClassName[0].toUpperCase() + answers.compClassName.slice(1); // Can't use .capitalize() as it will lowercase the camel humps
+    answers.compClassName = answers.compClassName[0].toLowerCase() + answers.compClassName.slice(1); // Can't use
+    // .capitalize() as it will lowercase the camel humps
 
     // include the essential folders
     files.push(path.join(templateDir.common, '**'));

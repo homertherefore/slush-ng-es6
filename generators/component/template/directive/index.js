@@ -10,5 +10,5 @@ import directive from './<%= compName %>.directive';
 
 export default angular.module('app.<%= compName %>', [])
   .controller('<%= compClassName %>Controller', controller)
-  .directive('<%= compName %>', directive)
+  .directive('<%= compClassName %>', directive)
   .name;
