@@ -1,1 +1,3 @@
-# Place your template files here!
+# <%= compClassName %>
+
+A <%= compType %> Angular ES6 component.
