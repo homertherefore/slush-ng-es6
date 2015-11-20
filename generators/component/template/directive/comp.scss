@@ -1,0 +1,19 @@
+@import "../../styles/lib";
+
+[%= compName %>] {
+  // xs view
+  @include breakpoint($bp-xs-only) {
+  }
+
+  // tablet view
+  @include breakpoint($bp-sm-only) {
+  }
+
+  // large tablet/small desktop view
+  @include breakpoint($bp-md-only) {
+  }
+
+  // normal desktop view
+  @include breakpoint($bp-lg-up) {
+  }
+}
