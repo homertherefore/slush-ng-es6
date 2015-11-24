@@ -84,7 +84,7 @@ var step = inquisitor.ScaffoldStep({
 
     // Specify the targeted destination path for this template to send files too, and make sure it's system
     // friendly. Stringjs is a boon for essential string manipulation such as slugifying a path name.
-    answers.dirs.dest = path.join(answers.dirs.dest, answers.compName);
+    answers.dirs.dest = path.join(answers.dirs.dest, answers.compClassName);
 
     // Since we provided a list prompt type, only one answers is selectable form it. Lets decide what to do with the result.
     if (answers.compType === options.compType.directive) {

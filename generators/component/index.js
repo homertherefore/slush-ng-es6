@@ -46,7 +46,7 @@ var scaffold = inquisitor.Scaffold({
         done: inquisitor.ascii.spacer()
       },
       defaults: {
-        scaffoldName: arg
+        compName: arg
       }
     };
   },
