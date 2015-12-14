@@ -13,6 +13,8 @@ export default function <%= compClassName %>($log) {
     controller: '<%= compClassName %>Controller',
     controllerAs:'vm',
     link(scope, element, attrs, controller, transcludeFn) {
+      let el = jQuery(element);
+      scope.el = el;
     }
   }
 }
