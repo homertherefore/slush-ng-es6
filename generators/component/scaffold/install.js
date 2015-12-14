@@ -34,7 +34,7 @@ var install = function (answers, finished) {
       }
 
       var searchAndReplace = 'comp';
-      if (basename[0] === '__') {
+      if (basename[0] === '_' && basename[1] === '_') { // __ double underscore
         filepath.basename = '_' + basename.slice(1);
       } else if (basename[0] === '_') {
         filepath.basename = '.' + basename.slice(1);
