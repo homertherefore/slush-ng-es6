@@ -34,7 +34,9 @@ var install = function (answers, finished) {
       }
 
       var searchAndReplace = 'comp';
-      if (basename[0] === '_') {
+      if (basename[0] === '__') {
+        filepath.basename = '_' + basename.slice(1);
+      } else if (basename[0] === '_') {
         filepath.basename = '.' + basename.slice(1);
       } else if (basename.indexOf(searchAndReplace) !== -1) {
         filepath.basename = basename.replace(searchAndReplace, answers.compClassName);
