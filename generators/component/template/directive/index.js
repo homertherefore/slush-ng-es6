@@ -1,14 +1,14 @@
 'use strict';
 
-import styles from './<%= compName %>.scss';
+import styles from './<%= compClassName %>.scss';
 
 import angular from 'angular';
 //import uirouter from 'angular-ui-router';
 
-import controller from './<%= compName %>.controller';
-import directive from './<%= compName %>.directive';
+import controller from './<%= compClassName %>.controller';
+import directive from './<%= compClassName %>.directive';
 
-export default angular.module('app.<%= compName %>', [])
+export default angular.module('app.<%= compClassName %>', [])
   .controller('<%= compClassName %>Controller', controller)
   .directive('<%= compClassName %>', directive)
   .name;
