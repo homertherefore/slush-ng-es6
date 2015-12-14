@@ -8,12 +8,12 @@ export default function <%= compClassName %>($log) {
     template: require('./<%= compClassName %>.html'), // automatically pulls in the html without need for template caching
     transclude: true,
     scope: {
-      //attr: '='
+      //title: '@title',
     },
     controller: '<%= compClassName %>Controller',
     controllerAs:'vm',
     link(scope, element, attrs, controller, transcludeFn) {
-      let el = jQuery(element);
+      let el = angular.element(element);
       scope.el = el;
     }
   }
